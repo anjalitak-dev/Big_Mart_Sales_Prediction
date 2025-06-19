@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Big Mart Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Big Mart</div>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- About Section -->
+     <section class="main-section  about-section">
+        <h1>About Us</h1>
+        <p>
+            The <strong>Big Mart Sales Predictor</strong> is an intelligent web application designed to analyze and forecast product sales across various outlets.
+            Whether you're a data enthusiast, a retailer, or a business analyst, this tool helps you estimate sales based on factors like item type, visibility, outlet size, location, and more.
+            
+           </p>
+        <p>
+            This project is built using <strong>Machine Learning models</strong> such as XGBoost and Random Forest, with a clean and responsive interface
+            built using HTML, CSS, JavaScript, and Flask. It’s simple, fast, and designed for everyone.
+        </p>
+    </section>
+
+
+    <!-- Tech Stack Section -->
+    <section class="main-section">
+        <h1>Technologies Used</h1>
+
+        <div class="form-grid">
+
+            <div class="form-card">
+                <h3>Python</h3>
+                <img src="{{ url_for('static', filename='images/python.png') }}" alt="Flask" class="tech-img">
+                <p class="ap" >Data processing & ML logic</p>
+            </div>
+
+       
+
+            <div class="form-card">
+                <h3>Flask</h3>
+                <img src="{{ url_for('static', filename='images/flask.png') }}" alt="Flask" class="tech-img">
+                <p class="ap" >Backend framework</p>
+            </div>
+            
+
+            <div class="form-card">
+                <h3>HTML/CSS/JS</h3>
+                <img src="{{ url_for('static', filename='images/web.png') }}" alt="Flask" class="tech-img">
+          
+                <p class="ap" >Frontend structure and styling</p>
+            </div>
+
+            <div class="form-card">
+                <h3>XGBoost & Random Forest</h3>
+                <img src="{{ url_for('static', filename='images/xg.png') }}" alt="Flask" class="tech-img">
+          
+                <p class="ap" >Machine Learning Models</p>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <!-- Team Section -->
+    <section class="main-section">
+        <h1>Our Team</h1>
+        <div class="form-grid">
+            <div class="form-card">
+                <h3>Anjali</h3>
+                <p>Frontend & ML Integration</p>
+            </div>
+            <div class="form-card">
+                <h3>Khushi</h3>
+                <p>Model Training & Optimization</p>
+            </div>
+            <div class="form-card">
+                <h3>Sharavani</h3>
+                <p>Backend & Deployment</p>
+            </div>
+            <div class="form-card">
+                <h3>Gaurangi</h3>
+                <p>UI/UX & Documentation</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 Big Mart Sales Predictor. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

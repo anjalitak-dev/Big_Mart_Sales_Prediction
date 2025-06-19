@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Big Mart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Big Mart</div>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-container">
+        <h2 class="login-heading">Login to Your Account</h2>
+        <form method="POST" action="/login" class="login-form">
+            <div class="card full-width">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div><br><br>
+            <div class="card full-width">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn-modern">Login</button>
+
+        </form>
+        <div class="signup-link">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+    
+    
+    
+
+
+
+    <footer>
+        <p>&copy; 2025 Big Mart Sales Predictor. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>

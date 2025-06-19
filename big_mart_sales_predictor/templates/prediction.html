@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict Sales</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+    <main class="predict-page">
+        <h2>Enter Product Details</h2>
+        <form method="POST" action="{{ url_for('predict') }}">
+            <input type="text" name="item_type" placeholder="Item Type">
+            <input type="number" name="item_mrp" placeholder="Item MRP">
+            <!-- Add other input fields as needed -->
+            <button type="submit">Predict</button>
+        </form>
+    </main>
+    {% include 'footer.html' %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

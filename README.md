@@ -32,5 +32,10 @@ It allows users to input product and outlet details via a user-friendly interfac
 | Language         | Python              |
 | Deployment Ready | Yes (Local or cloud platforms) |
 
+---
+## Screenshot
+![Screenshot 2025-04-26 101719](https://github.com/user-attachments/assets/803fbf52-c66c-482b-8964-cd5469cc6198)
+![Screenshot 2025-04-26 101950](https://github.com/user-attachments/assets/fb6a1182-ae51-4ec7-82b0-125f202fda47)
+
 
 
